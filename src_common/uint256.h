@@ -32,6 +32,7 @@ typedef struct uint256_t { uint128_t elements[2]; } uint256_t;
 #define UPPER(x) x.elements[0]
 #define LOWER(x) x.elements[1]
 
+uint64_t _readUint64BE(uint8_t *buffer);
 void readu128BE(uint8_t *buffer, uint128_t *target);
 void readu256BE(uint8_t *buffer, uint256_t *target);
 bool zero128(uint128_t *number);
